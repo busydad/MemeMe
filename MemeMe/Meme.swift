@@ -24,8 +24,15 @@ struct Meme {
     }
     
     static func getMemes() -> [Meme] {
+        return getMemeStorage().memes
+    }
+    
+    static func getMemeStorage() -> AppDelegate {
         let object = UIApplication.sharedApplication().delegate
-        let appDelegate = object as! AppDelegate
-        return appDelegate.memes
+        return object as! AppDelegate
+    }
+    
+    static func removeAtIndex(index: Int) {
+        Meme.getMemeStorage().memes.removeAtIndex(index)
     }
 }

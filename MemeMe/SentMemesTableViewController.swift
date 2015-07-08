@@ -35,6 +35,7 @@ class SentMemesTableViewController: UIViewController {
             let optinalIndexPath = tableView.indexPathForCell(sender as! SentMemeTableViewCell)
             if let indexPath = optinalIndexPath {
                 memeDetailViewController.meme = memes[indexPath.row]
+                memeDetailViewController.memeIndex = indexPath.row
             }
         }
     }

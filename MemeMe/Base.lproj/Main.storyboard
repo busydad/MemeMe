@@ -242,10 +242,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="deleteBarButton" destination="TNq-Al-FfK" id="uDU-E4-AbD"/>
+                        <outlet property="editBarButton" destination="wpP-DB-3UD" id="EgD-zR-908"/>
                         <outlet property="imageView" destination="Jnc-g3-vxh" id="Vap-Yu-3Vf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xda-hj-fIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem systemItem="trash" id="TNq-Al-FfK">
+                    <connections>
+                        <action selector="deleteMeme:" destination="JTA-sc-cyJ" id="ldo-LH-2UC"/>
+                    </connections>
+                </barButtonItem>
             </objects>
             <point key="canvasLocation" x="1465" y="1303"/>
         </scene>

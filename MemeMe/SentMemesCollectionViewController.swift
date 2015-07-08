@@ -35,6 +35,7 @@ class SentMemesCollectionViewController: UIViewController, UICollectionViewDataS
             let optinalIndexPath = collectionView.indexPathForCell(sender as! SentMemeCollectionViewCell)
             if let indexPath = optinalIndexPath {
                 memeDetailViewController.meme = memes[indexPath.row]
+                memeDetailViewController.memeIndex = indexPath.row
             }
         }
     }
